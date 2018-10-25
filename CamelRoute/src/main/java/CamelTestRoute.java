@@ -47,7 +47,7 @@ public class CamelTestRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        
+
         from("timer:foo?period=10s").log("message sent").to("mock:test");
 
     }
